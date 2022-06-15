@@ -4,18 +4,15 @@ Meal plan calculator designed to minimize monthly food costs.
 
 ## Description
 
-Propriatary dataset was used to train the conditional WGAN with gradient penalty. Any dataset with shape (num_samples, num_features) will work.
+First, fill in information in `calories_of_ingredients.py`, `food_costs.py`, and `recipes.py` files. Then run all cells in sequence in `main.py` file. The last cell will output the diet plan that should be followed. 
 
-The code was based on generating synthetic images, so whenever word 'images' appears, it should be interpreted as 'time-series' instead. I will fix this soon.
-
-Run the cells in sequence in `cwgan-gp_time_series.ipynb` jupyter notebook. Final cell contains code to create synthetic 
-image conditioned on a label.
+**Mixed-integer linear programming is performed using Gurobi optimizer. This must be installed ahead of time and requires a commercial or academic license.
 
 ## Getting Started
 
 ### Dependencies
 
-* tensorflow
+* pandas
 * numpy
 * gurobipy
 
